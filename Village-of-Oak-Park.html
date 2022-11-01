@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chicago Dentists</title>
+    <link rel="shortcut icon" href="img/" alt="Chicago Dentists" />
+    <meta charset="utf-8">
+    <meta name="title" content="Chicago Dentists">
+    <meta name="DC.title" lang="en" content="Chicago Dentists">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+    <meta name="description" content="Chicago Dentists">
+    <meta name="keywords" content="Chicago Dentists">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        * {
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            font-weight: bold;
+            color: black !important;
+        }
+
+        .btn-md {
+            padding: 15px 30px;
+            border-radius: 0;
+        }
+
+        .mbr-section-subsection {
+            color: #999999;
+            font-size: 20px;
+            margin-bottom: 21px;
+        }
+
+        .mbr-section-h1 {
+            font-size: 46px;
+        }
+
+        .text-grey {
+            color: #404040;
+        }
+
+        .content1 {
+            font-size: 20px;
+            color: #606060;
+        }
+
+        .bg-brown {
+            background: #eae8e4;
+        }
+
+        .display-4 {
+            font-size: 45px;
+        }
+
+        .font-weight-400 {
+            font-weight: 400;
+        }
+
+        body {
+            color: #232323;
+        }
+
+        .content2 {
+            font-size: 17px;
+        }
+
+        li a {
+            color: #ff5722;
+
+        }
+
+        ul {
+            list-style: circle;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        .content3 {
+            color: #696969;
+            font-size: 17px;
+        }
+
+        .contentImg:hover {
+            box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
+            transform: rotate(-2deg) scale(1.03);
+
+        }
+
+        .contentImg {
+            transition: all 0.3s;
+            border-radius: 30px;
+        }
+
+        iframe {
+            border: none !important;
+        }
+
+        footer {
+            background: black;
+            color: white;
+        }
+
+        footer a {
+            color: white !important;
+
+        }
+
+        .underlineShow {
+            font-weight: inherit;
+            background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 30%;
+            background-position: 0 90%;
+            transition: background-size 0.2s ease-in;
+        }
+
+        .allShow:hover,
+        .underlineShow:hover {
+            background-size: 100% 100% !important;
+
+            background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%) !important;
+            background-repeat: no-repeat !important;
+
+            background-position: 0 90% !important;
+            transition: background-size 0.2s ease-in !important;
+        }
+
+        .icon-button i {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .icon-button i:hover {
+            color: #7CE0D3;
+        }
+
+        .blackPara {
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .blackPara * {
+            color: white !important;
+
+
+        }
+
+        .bg-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url('img/3.jpg');
+            background-size: auto, cover;
+        }
+
+
+        .faq_area {
+            position: relative;
+            z-index: 1;
+            background-color: #EAE8E4;
+        }
+
+        .faq-accordian {
+            position: relative;
+            z-index: 1;
+        }
+
+        .faq-accordian .card {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-accordian .card:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-accordian .card .card-header {
+            background-color: #ffffff;
+            padding: 0;
+            border-bottom-color: #ebebeb;
+        }
+
+        .faq-accordian .card .card-header h6 {
+            cursor: pointer;
+            padding: 1.75rem 2rem;
+            color: #3f43fd;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -ms-grid-row-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .faq-accordian .card .card-header h6 span {
+            font-size: 1.5rem;
+        }
+
+        .faq-accordian .card .card-header h6.collapsed {
+            color: #070a57;
+        }
+
+        .faq-accordian .card .card-header h6.collapsed span {
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+
+        .faq-accordian .card .card-body {
+            padding: 1.75rem 2rem;
+        }
+
+        .faq-accordian .card .card-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .special-content .row-item {
+            padding: 3rem;
+            padding-top: 3.7rem;
+            height: 100%;
+        }
+
+        .special-content .row-item.card1 {
+            background: #eae8e4;
+        }
+
+        .special-content .row-item.card2 {
+            background: #eddad8;
+        }
+
+        .special-content .row-item.card3 {
+            background: #c1bebe;
+        }
+
+        .special-content .row-item.card4 {
+            background: #bcd9df;
+        }
+
+        .special-content .card-img {
+            margin-bottom: 1.7rem;
+            text-align: left;
+        }
+
+        .special-content .item-wrapper {
+            margin-bottom: 1.5rem;
+        }
+
+        .yacss-card-title {
+            margin-bottom: 1rem;
+        }
+
+        .yacss-iconfont {
+            background-color: #000000;
+            font-size: 30px;
+            height: 56px;
+            min-width: 56px;
+            padding: 0.7rem;
+            padding-top: 13px;
+            color: #fff;
+            border: 1px solid #000000;
+            border-radius: 50%;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .support-button p {
+                font-size: 14px;
+            }
+        }
+
+        .support-button i {
+            color: #3f43fd;
+            font-size: 1.25rem;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .support-button i {
+                font-size: 1rem;
+            }
+        }
+
+        .support-button a {
+            text-transform: capitalize;
+            color: #2ecc71;
+        }
+
+        @media only screen and (max-width: 575px) {
+            .support-button a {
+                font-size: 13px;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
+
+        <a class="navbar-brand" href="index.html">
+            <img alt="" src="img/" id="" data-test-source="" data-test-pro-id="" data-test-pro-name="" data-test=""
+                title="" alt="Chicago Dentists" width="150px">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+
+
+                <li class="mt-2  nav-item pr-md-4"><a class="nav-link allShow   " href="index.html"
+                        rel="nofollow">Chicago Dentists</a></li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container-fluid  bg-image pb-5">
+        <div class="container pt-5 pb-5 ">
+            <div class="row">
+                <div class="col-lg-12 text-center " id="">
+
+                    <h1 class="mbr-section-h1  text-white mb-0 ">
+                        <a class="allShow text-white">
+
+
+                            Chicago Dentists </a>
+                    </h1>
+                    <h2 class="mbr-section-subsection text-white "><b></b></h2>
+                </div>
+
+                <div class=" text-white blackPara col-lg-12 m-auto  " style>
+                    <p class="content1 text-white blackPara">
+                        <p>Village of Oak Park</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-4 bg-white">
+        <div class="container py-5">
+            <div class="row" id="">
+
+
+                <div class="col-lg-12 pt-5 ">
+
+                    <h2 class="display-4 font-weight-400">About</h2>
+                    
+                    <p> 
+					In Cook County, Illinois, close to Chicago, there is a community called Oak Park. According to the estimated population from the 2020 U.S. Census, it is the 29th-most 
+populous municipality in Illinois with 54,583 residents. After separating from Cicero, Oak Park was first established in 1835 and later incorporated in 1902. 
+ Frank Lloyd Wright, an architect, and his wife moved to Oak Park in 1889. His work had a significant impact on the neighborhood's architecture and design, notably 
+the Frank Lloyd Wright Home and Studio. [6] Railroads and street cars that connected the community to jobs in nearby Chicago over time sped up development. 
+The Open Housing Ordinance, which Oak Park enacted in 1968, assisted in coming up with plans to integrate the community rather than resegregate it. <br> <br>
+
+With 80% or greater voter turnout in each presidential election since 2000, Oak Park is still known for its socially liberal policies today while maintaining its 
+ethnic diversity.<br> <br>
+
+The Green Line and Blue Line "L" train lines of the Chicago Transit Authority, as well as the Metra Oak Park station downtown, provide Oak Park with direct access 
+to Chicago.<br> <br>
+
+					</p>
+					
+                    <h2 class="display-4 font-weight-400">Geography</h2>
+                    
+                    <p> 
+					The city of Chicago is located just west of Oak Park. The two municipalities are divided by North Avenue/Illinois Route 64 on the north side of the village and 
+Austin Boulevard on the east side of Oak Park. From Austin to Lombard, Roosevelt Road/Illinois Route 38 forms the southern border between Cicero and Oak Park. 
+From Lombard to Harlem Avenue, Berwyn forms the northern boundary. Its western border is formed by Harlem/Illinois Route 43, which borders Forest Park to the west 
+between North Boulevard and North Avenue and River Forest to the east between Roosevelt and South Boulevard. <br> <br>
+
+The entirety of Oak Park is located on the shore of the historic Lake Chicago, which was the predecessor to today's Lake Michigan and covered the majority of 
+Chicago during the last Ice Age. The lake's shoreline is marked by Ridgeland Avenue in east Oak Park, which was previously a ridge. Prehistoric Oak Park was a 
+"Plains river Delta" system because the ancient Des Plaines river previously spilled into glacial Lake Chicago, similar to how the Chicago River is situated 
+geographically, connecting to the present-day Lake Michigan just north of the city's Loop. Oak Park is located at one of the four continental divisions in 
+North America. The Saint Lawrence River watershed and the Mississippi River watershed are divided by this modest elevation that runs north-south through the hamlet. 
+Two plaques, one on Lake Street near Forest Avenue and the other in the northwest corner of Taylor Park, identify this division..<br> <br>
+
+Oak Park has a total land area of 4.7 sq mi (12.17 km2) as per the 2010 Census..<br> <br>
+
+					</p>		
+
+                    <h2 class="display-4 font-weight-400">Transportation</h2>
+                    
+                    <p> 
+					Public transport
+Five CTA stations in Oak Park provide service on the Green Line and Blue Line, making Oak Park reachable from Chicago. The Union Pacific / West Line of Metra has a 
+stop in Oak Park as well. The CTA and Pace both offer bus transit service both within Oak Park and to surrounding areas.<br> <br>
+
+Addresses, roads, and expressways
+The main expressway connecting Chicago with Oak Park is the Eisenhower Expressway. O'Hare International Airport can be reached by links from the roadway as well. 
+Oak Park's main east-west roadways continue east into Chicago.<br> <br>
+
+The streets are organized in a grid form, with certain small streets occasionally leading to cul-de-sacs to preserve a sense of place. With no east or west 
+designation, Oak Park's street naming system starts at Austin Boulevard for east-west streets and at the elevated train tracks just south of Lake Street for 
+north-south streets. From there, the numbers divide, getting larger as they go north or south and requiring a north or south designation on addresses. 
+The border streets correspond to the address systems of the cities that share them rather than the Oak Park numbering system. Addresses on Austin Boulevard, 
+for instance, correspond to the Chicago system, with the zero line at Madison Street, and along North Avenue, with Austin Boulevard at 6000 West and Harlem at 
+7200 West. Furthermore, Elizabeth Court, which is a part of the Frank Lloyd Wright Historic District, still bears the same numbering. There are one to twelve 
+homes on that cul-de-sac.<br> <br>
+
+
+View from 931 Lake Street looking east. The church pictured on the right is Calvary Memorial.
+Bicycles The Illinois Prairie Path's trailhead is less than a mile from Oak Park, and Augusta Boulevard, which runs through the hamlet, is a part of the Grand 
+Illinois Trail. With numerous cycling clubs and organizations, Oak Park is known as a bicycle-friendly town. The community's tree-lined streets and accessibility 
+to trails in neighboring cities draw cyclists to Oak Park, which is accessible by the Green Line, Blue Line, or Metra. Although there are marked bike lanes on 
+several of the roadways in Oak Park, no completely separated cycle facilities are yet in place.<br> <br>
+
+In 2016, the Chicago-based Divvy bike sharing system expanded to Oak Park.<br> <br>
+
+The Divvy service was discontinued by Oak Park's Village Board in 2017 because it was found to be inefficient. 
+					<br> <br>
+
+					</p>	
+                    <h2 class="display-4 font-weight-400">Government </h2>
+                    
+                    <p>  <br> <br>
+					<b>Village</b><br> <br>
+Oak Park has been governed by a council-manager system of local government since 1951. The village board, which is also elected, engages a village manager to 
+handle day-to-day operations on behalf of the elected president and village board. Additionally, Oak Park has five other governments that collect real estate taxes. 
+These comprise Oak Park Township, the River Forest-adjacent River Forest School District, the Oak Park Township, the High School District, the Elementary School 
+District, the Library District, and the Park District.<br> <br>
+
+Both the main Oak Park post office at 901 Lake Street and the Oak Park South post office at 1116 Garfield Street are run by the United States Postal Service.<br> <br>
+
+Elections A two-stage election procedure is used to choose the village board, village president, and other elected officials in Oak Park. Government 
+officials are chosen in general elections, but party nominees are chosen via primaries. Depending on whether it is a local or national election, Oak Park's voter 
+turnout fluctuates substantially. With 79.8% of registered voters casting ballots, Oak Park had the highest voter participation in Cook County's suburbs in the 2012 
+presidential election.  In accordance with state law, municipal elections for the village clerk and board of trustees are held in the spring and often have a 
+substantially lower voter turnout, averaging approximately 20%. Since the national political parties do not nominate candidates for the municipal elections, 
+they are regarded as nonpartisan. Candidates inspire involvement in neighborhood concerns by stepping forward or by being recruited by a citizens group that 
+looks for people to have new candidates for each election cycle.<br> <br>
+
+<b>Schools</b><br> <br>
+
+Library in Oak Park<br> <br>
+The Oak Park Elementary School District runs the public elementary schools (Lincoln, Mann, Longfellow, Beye, Irving, Holmes, Whittier, and Hatch) as well as 
+the middle schools Percy Julian Middle School (previously Nathaniel Hawthorne) and Gwendolyn Brooks Middle School (formerly Ralph Waldo Emerson).
+The entire municipal limits are served by elementary school District 97, which includes these ten schools. <br> <br>
+
+Periodically, reports on the performance of Oak Park's schools as determined by required statewide exams are made public.<br> <br>
+
+To encourage minority pupils to pursue their education, the junior high schools—now middle schools—were renamed after notable African-Americans rather than 
+well-known American authors. As of the publication date of the report, there is still a performance disparity in schools, which is referred to as "this 
+intolerable and chronic inequity".<br> <br>
+
+There are two high schools in Oak Park: Fenwick High School and Oak Park and River Forest High School, the only schools in educational District 200 that also 
+serve the entire city[31]. While Fenwick High School is a Catholic college preparatory institution operated by the Dominicans and associated with the Roman 
+Catholic Archdiocese of Chicago, Oak Park and River Forest High School is a public school with a district that includes both Oak Park and the nearby River Forest. 
+High academic standards have long been a tradition at both high schools. The Tradition of Excellence Award is given by Oak Park and River Forest High School to 
+notable graduates, such as Ernest Hemingway, Ray Kroc, Dan Castellaneta, George Trafton, a member of the football Hall of Fame, Mary Elizabeth Mastrantonio, an 
+actress, astronomer Chad Trujillo, a geochemist named Wally Broecker, and an advocate for the environment named Phil Radford. One of only seven secondary schools 
+in Illinois having the authority to initiate students into the Cum Laude Society is Oak Park and River Forest High School.<br> <br>
+
+<b>District Park </b><br> <br>
+The Oak Park Park District was initially established in 1912 as the Village of Oak Park's Recreation Department. Under Josephine Blackstock's leadership and that 
+of Lilly Ruth Hanson, who took over after her, the organization started an active program of village recreation. Blackstock gave the playgrounds the names of 
+well-known children's authors.
+<br> <br>
+The Recreation Department was abolished in the late 1980s, and the Park District of Oak Park was established as a distinct tax-collecting entity. It consists of 
+two outdoor swimming pools, the Oak Park Conservatory, a historic home that can be rented out for events for a fee, and thirteen parks spread out throughout the 
+hamlet, totaling 80 acres (320,000 m2) of parkland. Additionally, the Park District offers dog exercise facilities where dog owners can bring their animals in 
+exchange for a charge. The 1962-built Ridgeland Common is located at the intersection of Lake Street and Ridgeland Avenue and features a second outdoor pool, an 
+official-sized ice rink, a green roof, and synthetic-turf playing fields. From March 2013 until June 14, 2014, it underwent a comprehensive renovation. <br> <br>
+
+<b>community library </b><br> <br>
+The Oak Park Public Library was established as a public library in 1903 after choosing its first board of trustees. The library contains two branches: 
+the Dole Branch Library and the Maze Branch Library, as well as a main campus that overlooks Scoville Park near the intersection of Oak Park Avenue and Lake Street. 
+The Oak Park Public Library gives its cardholders access to almost 8 million materials as a part of the SWAN library consortium.<br> <br>
+
+<b>Fire</b><br> <br>
+The Oak Park Fire Department currently operates out of three fire stations dispersed around the village: Fire Station #1 (headquarters), Fire Station #2 (north), 
+and Fire Station #3 (south). Each station is overseen by a battalion chief who is in charge of a particular shift. Three ALS engines, one ALS truck, three ALS 
+ambulances, one ALS paramedic squad, one command unit, and many specialist MABAS divisional apparatus are all operated by the Oak Park Fire Department. 
+					<br> <br>
+
+					</p>					
+					
+<a href="https://big-smile-dental.business.site"> https://big-smile-dental.business.site </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container px-0">
+
+        </div>
+
+
+        <div class="container-fluid px-0">
+
+
+        </div>
+
+
+        <footer>
+            <div class="container py-4 pt-5" style="max-width: 1400px;">
+                <div class="row">
+                    <div class="col-lg-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col-lg-3">
+
+
+
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+                        <p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+
+
+
+                        <p><a href="sitemap.html" rel="nofollow" class="  allShow">Sitemap</a></p>
+
+                        <p><a href="privacy-policy.html" rel="nofollow" class="  allShow">Privacy Policy</a></p>
+
+                         
+
+                        <p>
+
+                        </p>
+                    </div>
+
+
+                    <div class="col-lg-3">
+                        <div class="social">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+
+</body>
+
+</html>
